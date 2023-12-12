@@ -1,0 +1,13 @@
+#### Listar Alunos ####
+GET https://localhost:7227/api/aluno/listar
+
+
+
+#### Cadastrar Alunos ####
+POST https://localhost:7227/api/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Matheus",
+    "dataDeNascimento" : "07-07-2000"
+}

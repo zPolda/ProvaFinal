@@ -1,0 +1,25 @@
+#### Listar IMC
+GET https://localhost:7227/api/imc/listar
+
+#### Listar IMC com id
+GET https://localhost:7227/api/imc/listar/1
+
+#### Cadastrar imc
+POST https://localhost:7227/api/imc/cadastrar
+Content-Type: application/json
+
+{
+   "altura" : "1.98",
+   "peso" : "80.0",
+   "alunoId" : 1
+}
+
+#### Editar IMC
+PUT https://localhost:7227/api/imc/alterar/2
+Content-Type: application/json
+
+{
+    "altura" : 2.0,
+    "peso" : 56.0,
+    "alunoId" : 1
+}

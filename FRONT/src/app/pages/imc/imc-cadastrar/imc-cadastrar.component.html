@@ -1,0 +1,20 @@
+<h1>Cadastrar Aluno</h1>
+<div>
+    <label>Altura| Metros: </label>
+    <input type="text" [(ngModel)]="altura">
+</div>
+<div>
+    <label>Peso| Kg: </label>
+    <input type="text" [(ngModel)]="peso">
+</div>
+<div>
+    <label>Alunos:</label>
+    <select [(ngModel)] = "alunoId">
+        <option *ngFor="let a of alunos" value="{{a.alunoId}}">
+            {{a.nome}}
+        </option>
+    </select>
+</div>
+<div>
+    <button (click)="cadastrar()">Cadastrar Aluno</button>
+</div>
